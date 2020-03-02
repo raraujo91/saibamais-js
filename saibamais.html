@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiba Mais JS</title>
+    <style> 
+        * {
+            overflow: hidden;
+        }
+        div {
+            height: 100px
+        }
+    </style>
+</head>
+<body>
+    <script src="dist/bundle.js"></script>
+    <div id="dwayne-line"><h1>What am I <span id="main"></span>?</h1></div>
+    <script>
+        console.log('hello from child');
+        var parProp = document.querySelector('#main');
+        parProp.innerHTML = window.xprops.therock.line;
+    </script>
+</body>
+</html>

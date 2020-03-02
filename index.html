@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yessss!!!</title>
+    <style>
+        * {
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <script src="dist/bundle.js"></script>
+    <div id="therock-photo"><img src="src/img/therock.jpg" alt="The Rock"></div>
+    <div id="therock-line"></div>
+    <script>
+        console.log('hello from parent');
+        SaibaMais({
+            therock: {
+                line: '...COOKING'
+            }
+        }).render("#therock-line")
+    </script>
+</body>
+</html>

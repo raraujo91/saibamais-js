@@ -1,0 +1,26 @@
+{
+  "name": "saibamais-js",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.js",
+  "main": "dist/saibamais.js",
+  "module": "dist/saibamais.module.js",
+  "unpkg": "dist/saibamais.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsx-pragmatic": "^2.0.8",
+    "zoid": "^9.0.37"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  }
+}
