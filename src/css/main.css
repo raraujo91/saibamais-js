@@ -3,10 +3,6 @@ body {
     font-family: "PayPal Sans Big", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333333;
   }
-
-  * {
-    overflow: hidden;
-  }
   
   .light {
     font-weight: 100;
