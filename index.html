@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,66 @@
             overflow: visible;
         }
     </style>
-</head>
-<body>
     <script src="dist/bundle.js"></script>
-    <div id="therock-photo"><img src="src/img/therock.jpg" alt="The Rock"></div>
-    <div id="therock-line"></div>
-    <script>
-        console.log('hello from parent');
-        SaibaMais({
-            therock: {
-                line: '...COOKING'
-            }
-        }).render("#therock-line")
-    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container"></div>
+    </div>
+    <br />
+    <select id="theme" name="theme">
+        <option value="default" selected>default</option>
+        <option value="deepblue">deepblue</option>
+        <option value="nightly">nightly</option>
+    </select>
+    <select id="lang" name="lang">
+        <option value="en_US">en_US</option>
+        <option value="pt_BR" selected>pt_BR</option>
+    </select>
 </body>
+
+<script>
+    var theme = document.querySelector("#theme");
+    var container = document.querySelector("#container");
+    var lang = document.querySelector("#lang");
+    var allSelects = document.querySelectorAll("select");
+
+    allSelects.forEach(select => {
+        select.addEventListener("change", function () {
+            changeBg(theme.value);
+            SaibaMais({
+                paypal: {
+                    lang: lang.value,
+                    theme: theme.value
+                }
+            }).render(container);
+        });
+    })
+
+    function changeBg(theme) {
+        container.innerHTML = "";
+        if (theme == "nightly") {
+            document.body.style.background = "#202020";
+        } else if (theme == "deepblue") {
+            document.body.style.background = "#020024";
+        } else {
+            document.body.style.background = "#FFFFFF";
+        }
+    }
+
+    changeBg(theme);
+
+    var iframe = document.querySelector("iframe");
+
+    SaibaMais({
+        paypal: {
+            theme: theme.value,
+            type: "default",
+            size: "max",
+            lang: lang.value
+        }
+    }).render(container);
+</script>
+
 </html>

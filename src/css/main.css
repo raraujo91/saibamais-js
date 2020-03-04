@@ -1,0 +1,362 @@
+body {
+    overflow: hidden;
+    font-family: "PayPal Sans Big", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333333;
+  }
+
+  * {
+    overflow: hidden;
+  }
+  
+  .light {
+    font-weight: 100;
+  }
+  
+  .thick {
+    font-weight: 500;
+  }
+  
+  .top {
+    font-size: 0.95em;
+    line-height: 15px;
+  }
+  
+  .title {
+    color: #009cde;
+    font-size: 5vw;
+  }
+  
+  .sub-title {
+    color: gray;
+    position: relative;
+    top: -10px;
+    font-size: 4vw;
+  }
+  
+  .right-side {
+    flex: 6;
+    height: 100%;
+  }
+  
+  .left-side {
+    flex: 1;
+    margin-left: 10%;
+  }
+  
+  .left-side > img {
+    width: 8vw;
+  }
+  
+  .content {
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 2px;
+    border-color: #d6d6d6;
+    background-color: #ffffff;
+  }
+  
+  .bg-stroke-animation {
+    stroke: #d6d6d6;
+  }
+  
+  /* DEEPBLUE */
+  
+  .theme-deepblue > .content {
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 3px;
+    border-color: #ffffff;
+    background: rgb(0, 3, 0);
+    background: -moz-linear-gradient(
+      144deg,
+      rgba(0, 3, 0, 1) 0%,
+      rgba(9, 9, 121, 1) 46%,
+      rgba(0, 145, 175, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      144deg,
+      rgba(0, 3, 0, 1) 0%,
+      rgba(9, 9, 121, 1) 46%,
+      rgba(0, 145, 175, 1) 100%
+    );
+    background: linear-gradient(
+      144deg,
+      rgba(0, 3, 0, 1) 0%,
+      rgba(9, 9, 121, 1) 46%,
+      rgba(0, 145, 175, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000300",endColorstr="#0091af",GradientType=1);
+  }
+  
+  .theme-deepblue > .top #ppsb_initial_line {
+    stroke: #ffffff;
+  }
+  
+  .theme-deepblue > .content .bg-stroke-animation {
+    stroke: #8eb9ca;
+  }
+  
+  .theme-deepblue > .content span {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(22, 9, 6, 0.35);
+  }
+  
+  .theme-deepblue > .top,
+  .theme-deepblue > .footer {
+    color: #ffffff;
+  }
+  
+  /* NIGHTLY */
+  
+  .theme-nightly > .content {
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 3px;
+    border-color: #ffffff;
+    background-color: #202020;
+  }
+  
+  .theme-nightly > .top,
+  .theme-nightly > .footer {
+    color: #ffffff;
+  }
+  
+  .theme-nightly > .top #ppsb_initial_line {
+    stroke: #ffffff;
+  }
+  
+  .theme-nightly > .content .bg-stroke-animation {
+    stroke: #616161;
+  }
+  
+  .theme-nightly > .content span {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(22, 9, 6, 0.35);
+  }
+  
+  .theme-nightly > .top .accepted-cc rect,
+  .theme-nightly > .top .accepted-cc #AMEX_bnr {
+    fill: rgb(29, 29, 29);
+  }
+  .theme-nightly > .top .accepted-cc #Rectangle_75 {
+    fill: #d1d1d1;
+  }
+  
+  .theme-nightly > .top .accepted-cc path,
+  .theme-nightly > .top .accepted-cc polygon {
+    fill: #ffffff;
+  }
+  .theme-nightly > .top .accepted-cc #Rectangle_77,
+  .theme-nightly > .top .accepted-cc #Path_346 {
+    fill: rgb(29, 29, 29);
+  }
+  
+  .content {
+    width: 97vw;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .content-text {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin-left: 20px;
+  }
+  
+  .content-text > svg {
+    margin-bottom: 4px;
+    height: 112%;
+    width: 100%;
+  }
+  
+  .footer {
+    height: 2em;
+    font-size: 5.9vw;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .footer {
+      font-size: 5.3vw;
+    }
+    .wrapper > .content {
+      border-width: 1px;
+      width: 95vw;
+    }
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .sub-title {
+      top: -5px;
+    }
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .wrapper > .content {
+      border-width: 3px;
+    }
+  }
+  
+  /* FONT FAMILY */
+  
+  @font-face {
+    font-family: "PayPal Sans Big";
+    font-weight: 500;
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.eot");
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.woff")
+        format("woff"),
+      url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf")
+        format("truetype"),
+      url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.svg")
+        format("svg");
+  }
+  
+  @font-face {
+    font-family: "PayPal Sans Big";
+    font-weight: 400;
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.eot");
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.woff")
+        format("woff"),
+      url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf")
+        format("truetype"),
+      url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.svg")
+        format("svg");
+  }
+  
+  @font-face {
+    font-family: "PayPal Sans Big";
+    font-weight: 300;
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.eot");
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.woff")
+        format("woff"),
+      url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf")
+        format("truetype"),
+      url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.svg")
+        format("svg");
+  }
+  
+  /* ANIMATIONS */
+  
+  .first-card {
+    position: absolute;
+    line-height: 1.45;
+    animation-duration: 21s;
+    animation-delay: 0s;
+  }
+  
+  .second-card {
+    position: absolute;
+    line-height: 1.45;
+    opacity: 0;
+    animation-duration: 21s;
+    animation-delay: 7s;
+  }
+  
+  .third-card {
+    position: absolute;
+    line-height: 1.45;
+    opacity: 0;
+    animation-duration: 21s;
+    animation-delay: 14s;
+  }
+  
+  .fade-in-out {
+    animation-name: fade;
+    animation-iteration-count: infinite;
+  }
+  
+  .bg-stroke-animation {
+    opacity: 0;
+    stroke-dasharray: 366;
+    animation-name: stroke;
+    animation-iteration-count: infinite;
+  }
+  
+  .fade-in {
+    animation-name: fade-in;
+    animation-duration: 800ms;
+  }
+  
+  @keyframes stroke {
+    0% {
+      stroke-dashoffset: 366;
+    }
+  
+    20% {
+      opacity: 1;
+    }
+  
+    30% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  
+    35% {
+      stroke-dashoffset: 366;
+      opacity: 0;
+    }
+  
+    100% {
+      stroke-dashoffset: 366;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+  
+    5% {
+      opacity: 1;
+    }
+  
+    30% {
+      opacity: 1;
+    }
+  
+    35% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #ppsb_initial_line {
+    stroke-dasharray: 376;
+    stroke-dashoffset: 376;
+    animation-name: dash-line;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes dash-line {
+    0% {
+      stroke-dashoffset: 376;
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  

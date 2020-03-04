@@ -1,25 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saiba Mais JS</title>
-    <style> 
-        * {
-            overflow: hidden;
-        }
-        div {
-            height: 100px
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
     <script src="dist/bundle.js"></script>
-    <div id="dwayne-line"><h1>What am I <span id="main"></span>?</h1></div>
-    <script>
-        console.log('hello from child');
-        var parProp = document.querySelector('#main');
-        parProp.innerHTML = window.xprops.therock.line;
-    </script>
+</head>
+
+<body>
+    <div class="wrapper fade-in">
+        <div class="top">
+            <svg viewBox="0 0 361 40">
+                <foreignObject x="0" y="10" width="100%" height="100%">
+                    <span class="light">PayPal é a sua carteira digital</span>
+                </foreignObject>
+                <path id="ppsb_initial_line"
+                    d="M.5,35c.38,0,180.76,0,181.14,0A19.13,19.13,0,0,0,198,23l4.31-10.44a19.13,19.13,0,0,1,16.36-12l1.14,0H359.15"
+                    fill="none" stroke="#d6d6d6" stroke-linecap="round" stroke-linejoin="round" />
+                <g class="accepted-cc">
+                    <g id="MC_bnr" data-name="MC bnr">
+                        <rect x="241.88" y="10.45" width="28.62" height="18.21" rx="1.3" fill="#f0f0f0" />
+                        <g id="Layer_1-2" data-name="Layer 1-2">
+                            <g id="_Group_" data-name=" Group ">
+                                <rect id="Rectangle_75" data-name="Rectangle 75" x="254.04" y="15.21" width="4.36"
+                                    height="7.84" fill="#ff5f00" />
+                                <path id="_Path_" data-name=" Path "
+                                    d="M254.32,19.12a5,5,0,0,1,1.9-3.91,5,5,0,1,0,0,7.83A5,5,0,0,1,254.32,19.12Z"
+                                    fill="#eb001b" />
+                                <path id="Path_337" data-name="Path 337"
+                                    d="M264.29,19.12A5,5,0,0,1,256.22,23a5,5,0,0,0,.84-7,4.4,4.4,0,0,0-.84-.83,5,5,0,0,1,8.07,3.91ZM263.81,22.21v-.16h.06v0h-.16v0h.07v.16Zm.32,0V22h-.05l-.06.14L264,22h0v.19h0v-.14l.06.12h0l.05-.12v.14Z"
+                                    fill="#f79e1b" />
+                            </g>
+                        </g>
+                    </g>
+                    <g id="VISA_bnr" data-name="VISA bnr">
+                        <rect x="209.65" y="10.45" width="28.62" height="18.21" rx="1.3" fill="#0b267d" />
+                        <path
+                            d="M219.47,17l-1.67,4.23-.68-3.6a.75.75,0,0,0-.74-.63h-2.74l0,.18a6.76,6.76,0,0,1,1.59.53.68.68,0,0,1,.38.55l1.28,5h1.7L221.16,17Zm2.38,0-1.33,6.22h1.61L223.46,17Zm9.22,1.68.49,2.34h-1.34ZM230.84,17a.74.74,0,0,0-.69.46l-2.41,5.76h1.69l.33-.93h2.07l.19.93h1.49L232.21,17Zm-6.94,1.94c0,.9.8,1.4,1.4,1.7s.84.5.84.77c0,.42-.5.6-1,.61a3.41,3.41,0,0,1-1.66-.39l-.28,1.36a4.93,4.93,0,0,0,1.78.33c1.69,0,2.8-.84,2.8-2.13,0-1.64-2.27-1.73-2.25-2.47,0-.22.22-.46.68-.52a3.11,3.11,0,0,1,1.59.28l.28-1.32a4.28,4.28,0,0,0-1.5-.27c-1.59,0-2.71.84-2.72,2.05"
+                            fill="#fff" />
+                    </g>
+                    <g id="ELO_bnr" data-name="ELO bnr">
+                        <rect x="274.1" y="10.45" width="28.62" height="18.21" rx="1.3" />
+                        <g id="Group_49" data-name="Group 49">
+                            <g id="Group_48" data-name="Group 48">
+                                <path id="Path_328" data-name="Path 328"
+                                    d="M281.48,17.44a2.38,2.38,0,0,1,3,1.51,2.68,2.68,0,0,1,.07.27l1.63-.33a4.09,4.09,0,0,0-5.24-3Z"
+                                    fill="#ffca05" />
+                                <path id="Path_329" data-name="Path 329"
+                                    d="M279.56,22.72l1.1-1.24a2.39,2.39,0,0,1-.21-3.36l.21-.2-1.1-1.25a4,4,0,0,0-.35,5.7,2.89,2.89,0,0,0,.35.35"
+                                    fill="#00a3df" />
+                                <path id="Path_330" data-name="Path 330"
+                                    d="M284.56,20.17A2.37,2.37,0,0,1,281.75,22l-.27-.07L281,23.53A4.05,4.05,0,0,0,286.07,21a3.74,3.74,0,0,0,.12-.45Z"
+                                    fill="#ee4023" />
+                            </g>
+                        </g>
+                        <path id="Path_331" data-name="Path 331"
+                            d="M287.62,21.53a2.59,2.59,0,0,1-.17-.33A2.43,2.43,0,0,1,291,18.15a2.39,2.39,0,0,1,1,1.22c0,.08.06.15.08.22Zm1.48-2.59a1.23,1.23,0,0,0-.74,1.3l2.24-1A1.2,1.2,0,0,0,289.1,18.94Zm1.77,2.1h0l0,0a1.32,1.32,0,0,1-.61.51,1.17,1.17,0,0,1-1.29-.13l0,0h0l-.57.85a2.41,2.41,0,0,0,3.41-.66ZM293.62,16.73v4.72l.73.3-.41,1-.81-.34a.89.89,0,0,1-.41-.33,1.1,1.1,0,0,1-.15-.59V16.73ZM295.52,20.25a1.32,1.32,0,0,1,.46-1l-.76-.84a2.47,2.47,0,0,0-.21,3.48l.21.22.75-.84A1.36,1.36,0,0,1,295.52,20.25ZM296.86,21.59a1.55,1.55,0,0,1-.43-.07l-.36,1.07A2.47,2.47,0,0,0,299.2,21c0-.1.05-.19.07-.29l-1.1-.22A1.35,1.35,0,0,1,296.86,21.59ZM296.86,17.78a2.28,2.28,0,0,0-.78.13l.36,1.07a1.48,1.48,0,0,1,.42-.07A1.34,1.34,0,0,1,298.17,20l1.11-.23A2.48,2.48,0,0,0,296.86,17.78Z"
+                            fill="#fff" />
+                    </g>
+                    <g id="Hiper_bnr" data-name="Hiper bnr">
+                        <rect x="306.33" y="10.45" width="28.62" height="18.21" rx="1.3" fill="#f37421" />
+                        <polygon
+                            points="312.11 16.73 312.11 21.89 313.29 21.89 313.29 19.73 315.21 19.73 315.21 21.89 316.37 21.89 316.37 16.73 315.21 16.73 315.21 18.71 313.29 18.71 313.29 16.73 312.11 16.73 312.11 16.73"
+                            fill="#fff" />
+                        <path
+                            d="M326.45,20.39a2.34,2.34,0,0,0,0-.46,1.66,1.66,0,0,0-1.67-1.87,1.88,1.88,0,0,0-1.89,2,1.79,1.79,0,0,0,2,1.9,3.54,3.54,0,0,0,1.35-.23l-.15-.79a3.23,3.23,0,0,1-1,.16c-.55,0-1-.23-1.06-.71Zm-2.42-.8a.77.77,0,0,1,.72-.76.68.68,0,0,1,.66.76ZM326.86,21.89H328V20a2,2,0,0,1,0-.26.75.75,0,0,1,.8-.59,1.3,1.3,0,0,1,.31,0v-1.1h-.24a1.1,1.1,0,0,0-1,.77h0l0-.69h-1c0,.32,0,.68,0,1.23v2.52ZM320,21h.59a.76.76,0,0,0,.85-.76c0-.39,0-1.28-.75-1.28s-.7,1.1-.7,1.67c0,.13,0,.25,0,.37ZM317,18.14h1.19v2.11a.69.69,0,0,0,.7.76c0-1,0-1.92,0-2.87h1l.06.55a1.48,1.48,0,0,1,2.46.06c.52.82.7,3.18-1.74,3.18H320c0,.48,0,1,0,1.44h-1.2c0-.46,0-.94,0-1.44A1.69,1.69,0,0,1,317,20.25V18.14Z"
+                            fill="#fff" />
+                        <path
+                            d="M317.56,16.52a.59.59,0,0,1,.59.6.58.58,0,0,1-.59.59.59.59,0,0,1-.6-.59.6.6,0,0,1,.6-.6Z"
+                            fill="#ffe700" fill-rule="evenodd" />
+                    </g>
+                    <g id="AMEX_bnr" data-name="AMEX bnr">
+                        <path id="Rectangle_77" data-name="Rectangle 77"
+                            d="M339.73,10.45h16.91V28.66H339.73a1.3,1.3,0,0,1-1.3-1.3V11.75A1.3,1.3,0,0,1,339.73,10.45Z"
+                            fill="#006fcf" />
+                        <path id="Path_345" data-name="Path 345"
+                            d="M356.65,21V13.42h-2.73L353.3,15l-.62-1.61h-3.35v2.35l-1.11-2.35h-2.73L342.64,20h2.23v5.82h7.32l1.11-1.24,1.12,1.24h2.23V24l-1.48-1.48Z"
+                            fill="#fff" />
+                        <path id="Path_346" data-name="Path 346"
+                            d="M354.42,14.16l-1.12,3.1-1.11-3.1h-2.11v5.08h1.37V15.78l1.24,3.46h1.24l1.24-3.46v3.46h1.48V14.16ZM347.85,14.16h-2l-2.22,5.08h1.61l.37-1h2.47l.38,1h1.61ZM346.11,17l.75-1.61L347.6,17ZM345.68,25h4.4V23.83h-3V23h3V21.91h-3v-.75h3V19.92h-4.34ZM354.18,22.45l2.34-2.53h-1.73l-1.5,1.58-1.48-1.58H350l2.45,2.51-2.32,2.45V25h1.73l1.48-1.6,1.48,1.6h1.8Z"
+                            fill="#006fcf" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div class="content">
+            <div class="left-side">
+                <img id="paypal-logo"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+" />
+            </div>
+            <div class="right-side">
+                <div class="content-text">
+                    <div class="first-card fade-in-out">
+                        <span class="title thick">One Touch</span><br />
+                        <span class="sub-title light">Pague com um clique</span>
+                    </div>
+
+                    <div class="second-card fade-in-out">
+                        <span class="title thick">Segurança</span><br />
+                        <span class="sub-title light">No armazenamento dos seus dados</span>
+                    </div>
+
+                    <div class="third-card fade-in-out">
+                        <span class="title thick">Frete Grátis na Devolução</span><br />
+                        <span class="sub-title light">Caso precise devolver o produto</span>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="50 -5 400 100" preserveAspectRatio="xMidYMax slice">
+                        <g class="bg-stroke-animation first-card">
+                            <path
+                                d="M307.11,90.54a40,40,0,0,0,16.31-66.23M303.27,13c-21.94-5.09-43.79,8.36-48.81,30a40.47,40.47,0,0,0,27.07,47.45m14-43.56L300.8,24M288.54,51.15a5.88,5.88,0,1,0,7.12-4.2M299.12.57l-1,4.18M303.31,13l8.52,2,2.78-12L304.27.57M300.6,24a28.71,28.71,0,0,0-34.45,21.49m32.31-11.38A18.58,18.58,0,0,0,276.17,48"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+
+                        <g class="bg-stroke-animation second-card">
+                            <path d="M286.36,90.47c20.41-18.39,29.15-48.77,27.58-74.88L269.09,25l11.1,52.88" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M260.54.77c-7.72,7-24.31,16.45-40.61,19.87,5.91,28.11,27.44,58.36,56.24,69.77"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M313,1.1a97.82,97.82,0,0,1-41-.46" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+
+                        <g class="bg-stroke-animation third-card">
+                            <path
+                                d="M322.58,5.74l-19.75,77M352,46.15,268.34,24.69M314.7,37.52l10.65,18.67m-28.88-7.41,17.71-11.39m-11.64-9.24A6.28,6.28,0,0,1,301,19.49a6.14,6.14,0,0,1,8.53-1.64A5.8,5.8,0,0,1,312.14,22l1.64,13.72Zm13.25,8.12,8-11.23a5.8,5.8,0,0,1,4.32-2.4,6.14,6.14,0,0,1,6.69,5.55A6.28,6.28,0,0,1,329.31,35Zm-53.41,9.34L260,54.76h0l29.2,7.49-1.31,5.12M274.52.59l-8.14,31.74m74.42,58.2,19.55-76.17L306.64.58m-44.44,45L239.27,59.48l13.5,22.86,2.37-9.25,67.58,17.36"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span class="light">Fecha com PayPal </span>
+            <span class="thick">CLICOU, PAGOU!</span>
+        </div>
+    </div>
 </body>
+
+<script>
+    var theme = window.xprops.paypal.theme;
+    var lang = window.xprops.paypal.lang;
+    var bg = document.body.style.background;
+    var wrapper = document.querySelector(".wrapper");
+    var cleaner = () => wrapper.classList.remove(wrapper.classList.item(2));
+    var whiteLogo =
+        "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0Ij4KICAgIDxwYXRoIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNyIgZD0iTSAyMC43MDIgOS40NDYgQyAyMC45ODIgNy4zNDcgMjAuNzAyIDUuOTQ3IDE5LjU3OCA0LjU0OCBDIDE4LjM2MSAzLjE0OCAxNi4yMDggMi41NDggMTMuNDkzIDIuNTQ4IEwgNS41MzYgMi41NDggQyA0Ljk3NCAyLjU0OCA0LjUwNiAyLjk0OCA0LjQxMiAzLjU0OCBMIDEuMTM2IDI1Ljc0IEMgMS4wNDIgMjYuMjM5IDEuMzIzIDI2LjYzOSAxLjc5MSAyNi42MzkgTCA2Ljc1MyAyNi42MzkgTCA2LjM3OCAyOC45MzggQyA2LjI4NSAyOS4yMzggNi42NTkgMjkuNjM4IDYuOTQgMjkuNjM4IEwgMTEuMTUzIDI5LjYzOCBDIDExLjYyMSAyOS42MzggMTEuOTk1IDI5LjIzOCAxMi4wODkgMjguNzM5IEwgMTIuMTgyIDI4LjUzOSBMIDEyLjkzMSAyMy4zNDEgTCAxMy4wMjUgMjMuMDQxIEMgMTMuMTE5IDIyLjQ0MSAxMy40OTMgMjIuMTQxIDEzLjk2MSAyMi4xNDEgTCAxNC42MTYgMjIuMTQxIEMgMTguNjQyIDIyLjE0MSAyMS43MzEgMjAuMzQyIDIyLjY2OCAxNS40NDMgQyAyMy4wNDIgMTMuMzQ0IDIyLjg1NSAxMS41NDUgMjEuODI1IDEwLjM0NSBDIDIxLjQ1MSAxMC4wNDYgMjEuMDc2IDkuNjQ2IDIwLjcwMiA5LjQ0NiBMIDIwLjcwMiA5LjQ0NiI+PC9wYXRoPgogICAgPHBhdGggZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC43IiBkPSJNIDIwLjcwMiA5LjQ0NiBDIDIwLjk4MiA3LjM0NyAyMC43MDIgNS45NDcgMTkuNTc4IDQuNTQ4IEMgMTguMzYxIDMuMTQ4IDE2LjIwOCAyLjU0OCAxMy40OTMgMi41NDggTCA1LjUzNiAyLjU0OCBDIDQuOTc0IDIuNTQ4IDQuNTA2IDIuOTQ4IDQuNDEyIDMuNTQ4IEwgMS4xMzYgMjUuNzQgQyAxLjA0MiAyNi4yMzkgMS4zMjMgMjYuNjM5IDEuNzkxIDI2LjYzOSBMIDYuNzUzIDI2LjYzOSBMIDcuOTcgMTguMzQyIEwgNy44NzYgMTguNjQyIEMgOC4wNjMgMTguMDQzIDguNDM4IDE3LjY0MyA5LjA5MyAxNy42NDMgTCAxMS40MzMgMTcuNjQzIEMgMTYuMDIxIDE3LjY0MyAxOS41NzggMTUuNjQzIDIwLjYwOCA5Ljk0NiBDIDIwLjYwOCA5Ljc0NiAyMC42MDggOS41NDYgMjAuNzAyIDkuNDQ2Ij48L3BhdGg+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNIDkuMjggOS40NDYgQyA5LjI4IDkuMTQ2IDkuNDY4IDguODQ2IDkuODQyIDguNjQ2IEMgOS45MzYgOC42NDYgMTAuMTIzIDguNTQ2IDEwLjIxNiA4LjU0NiBMIDE2LjQ4OSA4LjU0NiBDIDE3LjIzOCA4LjU0NiAxNy44OTMgOC42NDYgMTguNTQ4IDguNzQ2IEMgMTguNzM2IDguNzQ2IDE4LjgyOSA4Ljc0NiAxOS4xMSA4Ljg0NiBDIDE5LjIwNCA4Ljk0NiAxOS4zOTEgOC45NDYgMTkuNTc4IDkuMDQ2IEMgMTkuNjcyIDkuMDQ2IDE5LjY3MiA5LjA0NiAxOS44NTkgOS4xNDYgQyAyMC4xNCA5LjI0NiAyMC40MjEgOS4zNDYgMjAuNzAyIDkuNDQ2IEMgMjAuOTgyIDcuMzQ3IDIwLjcwMiA1Ljk0NyAxOS41NzggNC42NDggQyAxOC4zNjEgMy4yNDggMTYuMjA4IDIuNTQ4IDEzLjQ5MyAyLjU0OCBMIDUuNTM2IDIuNTQ4IEMgNC45NzQgMi41NDggNC41MDYgMy4wNDggNC40MTIgMy41NDggTCAxLjEzNiAyNS43NCBDIDEuMDQyIDI2LjIzOSAxLjMyMyAyNi42MzkgMS43OTEgMjYuNjM5IEwgNi43NTMgMjYuNjM5IEwgNy45NyAxOC4zNDIgTCA5LjI4IDkuNDQ2IFoiPjwvcGF0aD4KICAgIDxnIHRyYW5zZm9ybT0ibWF0cml4KDAuNDk3NzM3LCAwLCAwLCAwLjUyNjEyLCAxLjEwMTQ0LCAwLjYzODY1NCkiIG9wYWNpdHk9IjAuMiI+CiAgICAgICAgPHBhdGggZmlsbD0iIzIzMWYyMCIgZD0iTTM5LjMgMTYuN2MwLjkgMC41IDEuNyAxLjEgMi4zIDEuOCAxIDEuMSAxLjYgMi41IDEuOSA0LjEgMC4zLTMuMi0wLjItNS44LTEuOS03LjgtMC42LTAuNy0xLjMtMS4yLTIuMS0xLjdDMzkuNSAxNC4yIDM5LjUgMTUuNCAzOS4zIDE2Ljd6Ij48L3BhdGg+CiAgICAgICAgPHBhdGggZmlsbD0iIzIzMWYyMCIgZD0iTTAuNCA0NS4yTDYuNyA1LjZDNi44IDQuNSA3LjggMy43IDguOSAzLjdoMTZjNS41IDAgOS44IDEuMiAxMi4yIDMuOSAxLjIgMS40IDEuOSAzIDIuMiA0LjggMC40LTMuNi0wLjItNi4xLTIuMi04LjRDMzQuNyAxLjIgMzAuNCAwIDI0LjkgMEg4LjljLTEuMSAwLTIuMSAwLjgtMi4zIDEuOUwwIDQ0LjFDMCA0NC41IDAuMSA0NC45IDAuNCA0NS4yeiI+PC9wYXRoPgogICAgICAgIDxwYXRoIGZpbGw9IiMyMzFmMjAiIGQ9Ik0xMC43IDQ5LjRsLTAuMSAwLjZjLTAuMSAwLjQgMC4xIDAuOCAwLjQgMS4xbDAuMy0xLjdIMTAuN3oiPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+Cg==";
+
+    var blueLogo =
+        "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCIgeG1sbnM9Imh0dHA6JiN4MkY7JiN4MkY7d3d3LnczLm9yZyYjeDJGOzIwMDAmI3gyRjtzdmciPjxwYXRoIGZpbGw9IiMwMDljZGUiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA2LjY5NCAyNi41NTcgQyA2LjYgMjYuOTU3IDYuODgxIDI3LjI1NyA3LjI1NSAyNy4yNTcgTCAxMS4zNzUgMjcuMjU3IEMgMTEuODQ0IDI3LjI1NyAxMi4zMTEgMjYuOTU3IDEyLjQwNSAyNi40NTcgTCAxMi40MDUgMjYuMTU3IEwgMTMuMjQ3IDIwLjk1NyBMIDEzLjI0NyAyMC43NTcgQyAxMy4zNDEgMjAuMjU3IDEzLjgwOSAxOS44NTcgMTQuMjc3IDE5Ljg1NyBMIDE0Ljg0IDE5Ljg1NyBDIDE4Ljg2NCAxOS44NTcgMjEuOTU0IDE4LjE1NyAyMi44OSAxMy4xNTcgQyAyMy4zNTggMTEuMDU3IDIzLjE3MiA5LjM1NyAyMi4wNDggOC4xNTcgQyAyMS43NjcgNy43NTcgMjEuMjk4IDcuNDU3IDIwLjkyNCA3LjE1NyBMIDIwLjkyNCA3LjE1NyI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMTIxNjkiIG9wYWNpdHk9IjEiIGQ9Ik0gMjAuOTI0IDcuMTU3IEMgMjEuMjA0IDUuMDU3IDIwLjkyNCAzLjY1NyAxOS44MDEgMi4zNTcgQyAxOC41ODMgMC45NTcgMTYuNDMgMC4yNTcgMTMuNzE2IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNzU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA4LjE5MiAxNi4zNTcgQyA4LjI4NiAxNS43NTcgOC43NTQgMTUuMzU3IDkuMzE1IDE1LjM1NyBMIDExLjY1NSAxNS4zNTcgQyAxNi4yNDMgMTUuMzU3IDE5LjgwMSAxMy4zNTcgMjAuOTI0IDcuNzU3IEMgMjAuODMxIDcuNDU3IDIwLjkyNCA3LjM1NyAyMC45MjQgNy4xNTciPjwvcGF0aD48cGF0aCBmaWxsPSIjMDAzMDg3IiBvcGFjaXR5PSIxIiBkPSJNIDkuNTA0IDcuMTU3IEMgOS41OTYgNi44NTcgOS43ODQgNi41NTcgMTAuMDY1IDYuMzU3IEMgMTAuMjUxIDYuMzU3IDEwLjM0NSA2LjI1NyAxMC41MzIgNi4yNTcgTCAxNi43MTEgNi4yNTcgQyAxNy40NjEgNi4yNTcgMTguMjA4IDYuMzU3IDE4Ljc3MiA2LjQ1NyBDIDE4Ljk1OCA2LjQ1NyAxOS4xNDYgNi40NTcgMTkuMzMzIDYuNTU3IEMgMTkuNTIgNi42NTcgMTkuNzA3IDYuNjU3IDE5LjgwMSA2Ljc1NyBDIDE5Ljg5NCA2Ljc1NyAxOS45ODcgNi43NTcgMjAuMDgyIDYuNzU3IEMgMjAuMzYyIDYuODU3IDIwLjY0MyA3LjA1NyAyMC45MjQgNy4xNTcgQyAyMS4yMDQgNS4wNTcgMjAuOTI0IDMuNjU3IDE5LjgwMSAyLjI1NyBDIDE4LjY3NyAwLjg1NyAxNi41MjUgMC4yNTcgMTMuODA5IDAuMjU3IEwgNS43NTggMC4yNTcgQyA1LjI5IDAuMjU3IDQuNzI5IDAuNjU3IDQuNjM0IDEuMjU3IEwgMS4zNTggMjMuNDU3IEMgMS4zNTggMjMuODU3IDEuNjM5IDI0LjM1NyAyLjEwNyAyNC4zNTcgTCA2Ljk3NSAyNC4zNTcgTCA4LjI4NiAxNi4wNTcgTCA5LjUwNCA3LjE1NyBaIj48L3BhdGg+PC9zdmc+";
+
+    cleaner();
+
+    console.log(window.xprops.paypal)
+
+    function setLogo(logo) {
+        var currLogo = document.querySelector("img");
+        currLogo.src = logo;
+        return true;
+    }
+
+    switch (theme) {
+        case "nightly":
+            bg = "#202020";
+            setLogo(whiteLogo);
+            wrapper.classList.add("theme-nightly");
+            break;
+        case "deepblue":
+            bg = "#020024";
+            setLogo(whiteLogo);
+            wrapper.classList.add("theme-deepblue");
+            break;
+        default:
+            bg = "#FFFFFF";
+            setLogo(blueLogo);
+            break;
+    }
+</script>
+
 </html>

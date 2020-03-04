@@ -1,4 +1,4 @@
-import zoid from 'zoid'
+import zoid from 'zoid';
 
 window.SaibaMais = zoid.create({
   tag: "svg-saibamais-paypal",
