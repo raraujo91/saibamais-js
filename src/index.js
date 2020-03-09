@@ -1,6 +1,6 @@
-import zoid from 'zoid';
+import zoid from 'zoid/dist/zoid.frame';
 
-window.SaibaMais = zoid.create({
+export default zoid.create({
   tag: "svg-saibamais-paypal",
 
   url: `./saibamais.html`,
@@ -14,4 +14,5 @@ window.SaibaMais = zoid.create({
     height: "100%",
     width: "100%"
   }
+
 });

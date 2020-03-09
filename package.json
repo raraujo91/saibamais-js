@@ -13,12 +13,12 @@
   "license": "ISC",
   "dependencies": {
     "jsx-pragmatic": "^2.0.8",
+    "rollup-plugin-terser": "^5.2.0",
     "zoid": "^9.0.37"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
-    "rollup-plugin-node-globals": "^1.4.0",
-    "rollup-plugin-uglify": "^6.0.4"
+    "rollup-plugin-node-globals": "^1.4.0"
   }
 }
